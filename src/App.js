@@ -9,7 +9,11 @@ function App() {
   useEffect(() => {
     function getNomes() {
 
-      axios.get('http://localhost:3030/listar')
+      axios.get('http://localhost:3031/listar', {
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      })
         .then(function (response) {
           setLstNomes(response.data);
         })

@@ -10,7 +10,7 @@ function App() {
 
         const data = { "Nome": nome };
 
-        axios.post('http://localhost:3030/cadastrar', data)
+        axios.post('http://localhost:3031/cadastrar', data)
             .then(function (response) {
                 console.log(response);
                 alert('Cadastrado com sucesso');
